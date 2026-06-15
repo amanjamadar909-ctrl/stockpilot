@@ -11,15 +11,19 @@ import {
   Menu,
   X,
   LogOut,
+  Building2,
+  History,
 } from 'lucide-react';
 
 const navItems = [
   { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { to: '/products', label: 'Products', icon: Package },
+  { to: '/suppliers', label: 'Suppliers', icon: Building2 },
   { to: '/purchases', label: 'Purchases', icon: PackagePlus },
   { to: '/sales', label: 'Sales', icon: ShoppingCart },
   { to: '/alerts', label: 'Alerts', icon: AlertTriangle },
   { to: '/reports', label: 'Reports', icon: FileText },
+  { to: '/activity', label: 'Activity', icon: History },
 ];
 
 export function Layout() {

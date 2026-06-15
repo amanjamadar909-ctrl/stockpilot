@@ -8,6 +8,8 @@ import { Purchases } from './pages/Purchases';
 import { Sales } from './pages/Sales';
 import { Alerts } from './pages/Alerts';
 import { Reports } from './pages/Reports';
+import { Suppliers } from './pages/Suppliers';
+import { ActivityHistory } from './pages/ActivityHistory';
 
 function AppRoutes() {
   const { user, loading } = useAuth();
@@ -33,10 +35,12 @@ function AppRoutes() {
         <Route index element={<Navigate to="/dashboard" replace />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="products" element={<Products />} />
+        <Route path="suppliers" element={<Suppliers />} />
         <Route path="purchases" element={<Purchases />} />
         <Route path="sales" element={<Sales />} />
         <Route path="alerts" element={<Alerts />} />
         <Route path="reports" element={<Reports />} />
+        <Route path="activity" element={<ActivityHistory />} />
       </Route>
     </Routes>
   );
